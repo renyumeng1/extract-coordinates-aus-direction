@@ -27,10 +27,17 @@ pixi run calculate-relations
 ```
 
 This task will:
-- Read the source shapefile.
+- Read the source shapefile from the `SAL_2021_AUST_GDA2020_SHP/` directory.
 - Calculate the centroid for each locality.
 - Perform a highly optimized, vectorized calculation for over 235 million city pairs.
-- Save the results into 20 separate CSV files in the `data/` directory, with a progress bar indicating the writing process.
+- Save the results into 20 separate CSV files in the `data/` directory.
+
+### **Important: Data Setup**
+The source shapefile data is not included in this Git repository due to its large size. Before running the task, you must download it manually.
+
+1.  **Download** the "ESRI Shapefile" format from the [Australian Bureau of Statistics website](https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files/SAL_2021_AUST_GDA2020_SHP.zip).
+2.  **Unzip** the downloaded file.
+3.  **Place** the resulting `SAL_2021_AUST_GDA2020_SHP` directory into the root of this project.
 
 ## Datasets
 
@@ -38,7 +45,7 @@ This task will:
 
 | Dataset Name | Download Link | Original Literature | Original Link | Sample Count | Feature Count | Class Count | Dataset Introduction |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Suburbs and Localities (SAL) 2021 GDA2020 | [ABS Website](https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026) | | [ABS Website](https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026) | 15,334 | ~11 | N/A | Suburbs and Localities (SALs) are an ABS approximation of gazetted localities, created for statistical purposes. They cover most of Australia and are based on the Australian Statistical Geography Standard (ASGS). |
+| Suburbs and Localities (SAL) 2021 GDA2020 | [ABS Website](https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files/SAL_2021_AUST_GDA2020_SHP.zip | | [ABS Website](https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026) | 15,334 | ~11 | N/A | Suburbs and Localities (SALs) are an ABS approximation of gazetted localities, created for statistical purposes. They cover most of Australia and are based on the Australian Statistical Geography Standard (ASGS). |
 
 ### **Australian City-Pair Directional Relations Dataset**
 

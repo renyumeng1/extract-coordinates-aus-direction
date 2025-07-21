@@ -1,6 +1,11 @@
 # pixi environments
 .pixi
 /data
-/SAL_2021_AUST_GDA2020_SHP
 .vscode
 
+
+# Ignore large raw data directories and their contents
+SAL_2021_AUST_GDA2020_SHP/
+
+# Ignore processed data directory
+data/
