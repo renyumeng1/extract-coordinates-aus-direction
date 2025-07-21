@@ -1,0 +1,15 @@
+[workspace]
+authors = ["renyumeng1 <2035328756@qq.com>"]
+channels = ["conda-forge"]
+name = "extractCoordinates"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+calculate-relations = { cmd = "python calculate_relations.py", description = "Calculates the directional relationship between all pairs of cities from the shapefile and saves the output to multiple CSV files in the 'data/' directory. This is a computationally intensive task." }
+analyze-results = { cmd = "python analyze_results.py", description = "Analyzes the distribution of directional labels from the generated CSV files in the 'data/' directory." }
+
+[dependencies]
+geopandas = ">=1.1.1,<2"
+polars = ">=1.31.0,<2"
+tqdm = ">=4.66.4,<5"
