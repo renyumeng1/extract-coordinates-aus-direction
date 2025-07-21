@@ -1,4 +1,4 @@
-# Australian Cities Coordinate Extraction and Relation Analysis
+# Australian Locality Coordinate Extraction and Directional Relationship Analysis
 
 This project extracts suburb and locality (SAL) data from Australian government shapefiles, calculates the centroid coordinates for each locality, and then determines the directional relationship (e.g., North, South-West) for every pair of localities. The final output is a series of CSV files detailing these relationships.
 
