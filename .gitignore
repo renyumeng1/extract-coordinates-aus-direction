@@ -9,3 +9,8 @@ SAL_2021_AUST_GDA2020_SHP/
 
 # Ignore processed data directory
 data/
+
+# Ignore dataset statistics and analysis scripts (temporary files)
+dataset_statistics.md
+analyze_sal_dataset.py
+check_categories.py
