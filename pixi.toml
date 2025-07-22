@@ -8,6 +8,7 @@ version = "0.1.0"
 [tasks]
 calculate-relations = { cmd = "python calculate_relations.py", description = "Calculates the directional relationship between all pairs of cities from the shapefile and saves the output to multiple CSV files in the 'data/' directory. This is a computationally intensive task." }
 analyze-results = { cmd = "python analyze_results.py", description = "Analyzes the distribution of directional labels from the generated CSV files in the 'data/' directory." }
+combine-datasets = { cmd = "python calculate_direction_datasets.py", description = "Combines Wikipedia directional relations with algorithmic calculations from SAL shapefile data, generating a unified dataset with both wiki and calculated directions." }
 
 [dependencies]
 geopandas = ">=1.1.1,<2"
